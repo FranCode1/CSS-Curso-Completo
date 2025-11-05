@@ -1,0 +1,52 @@
+/* selector de todo */
+*{
+    background-color: burlywood;
+}
+
+/* selector de etiqueta */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 1px solid white;
+}
+
+/* selector de clase */
+.contenedor__caja{
+    width: 300px;
+    background-color: forestgreen;
+}
+.contenedor__caja--color{
+    background-color: darkcyan;
+}
+.bloque{
+    height: 20vh;
+    width: 100vw;
+    background-color: dodgerblue;
+}
+.bloque__caja{
+    height: 5em;
+    width: 30%;
+    background-color: bisque;
+}
+.contenedor__texto{
+    font-size: 2lh;
+}
+
+/* selector de atributo */
+[title]{
+    background-color: darkslategrey;
+    color: antiquewhite;
+}
+
+/* selector de ID */
+#tarjeta{
+    background-color: blue;
+    height: 150px;
+    width: 400px;
+}
+#coloreado{
+    color: azure;
+}
+
+/* selector important (!important) */
