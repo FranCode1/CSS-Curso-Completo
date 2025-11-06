@@ -1,0 +1,72 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #0077b6;
+    color: white;
+}
+
+.nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #00b4d8;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1 1 250px;
+    /* Flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #0077b6;
+    color: white;
+}
+
+/* Media Queries: Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

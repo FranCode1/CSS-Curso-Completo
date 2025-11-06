@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #00b4d8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    /* se muestra en pantallas pequeñas */
+}
+
+/* Waves */
+.wave-container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+/* Contenido principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 4rem;
+    color: #0077b6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
