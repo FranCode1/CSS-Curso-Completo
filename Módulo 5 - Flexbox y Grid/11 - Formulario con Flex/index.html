@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario con Flexbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧾 Formulario con Flexbox</h1>
+    <p>
+      En este ejemplo, usamos <code>display: flex</code> para alinear los campos y etiquetas de un formulario
+      de manera ordenada y responsive.
+    </p>
+  </header>
+
+  <main>
+    <form class="formulario">
+      <div class="form-row">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej: Franco Lugo" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" placeholder="Ej: franco@mail.com" required />
+      </div>
+
+      <div class="form-row">
+        <label for="pais">País:</label>
+        <select id="pais">
+          <option value="">Selecciona tu país</option>
+          <option>Argentina</option>
+          <option>Chile</option>
+          <option>Uruguay</option>
+          <option>México</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+
+      <div class="form-row botones">
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>💡 Tip: Flexbox facilita crear formularios alineados y adaptables sin necesidad de usar floats.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* --- RESETEO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BASE --- */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f8fb;
+    color: #333;
+    padding: 2rem;
+}
+
+h1 {
+    color: #0078ff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --- FORMULARIO --- */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* --- FILAS --- */
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-row label {
+    flex: 1;
+    font-weight: 600;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 2;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* --- BOTONES --- */
+.form-row.botones {
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+button {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #005ec7;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-row label {
+        width: 100%;
+    }
+
+    .form-row.botones {
+        justify-content: center;
+    }
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+}

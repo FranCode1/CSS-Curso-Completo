@@ -1,0 +1,89 @@
+/* --- RESETEO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BASE --- */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #0078ff;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* --- SECCIONES --- */
+section {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* --- SIN DRY (mala práctica) --- */
+.btn1 {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+/* --- CON DRY (buena práctica) --- */
+.btn {
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Clases modificadoras */
+.success {
+    background-color: #28a745;
+}
+
+.danger {
+    background-color: #ff3b3b;
+}
+
+/* Hover general */
+.btn:hover {
+    opacity: 0.9;
+}

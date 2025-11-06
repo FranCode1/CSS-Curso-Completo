@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método DRY en CSS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💡 Método DRY (Don't Repeat Yourself)</h1>
+    <p>
+      El principio DRY significa <strong>“No te repitas”</strong>.  
+      En CSS se aplica al crear clases reutilizables en lugar de repetir estilos.
+    </p>
+  </header>
+
+  <main>
+    <section class="sin-dry">
+      <h2>❌ Código repetido</h2>
+      <button class="btn1">Guardar</button>
+      <button class="btn2">Cancelar</button>
+    </section>
+
+    <section class="con-dry">
+      <h2>✅ Aplicando DRY</h2>
+      <button class="btn base success">Guardar</button>
+      <button class="btn base danger">Cancelar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      💬 <strong>Tip:</strong> Usá clases base y modificadores para mantener tu CSS limpio y fácil de escalar.
+    </p>
+  </footer>
+</body>
+</html>
